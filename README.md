@@ -1,7 +1,7 @@
 # cba-toolbox
 ### CBA Toolbox
 
-This software performs high-throughput, batched, automated analysis of raw cytometry (FCS) files produced using the cytometric bead array assay as described in:
+This software performs high-throughput, batched, automated analysis of raw cytometry (FCS) files produced using the cytometric bead array (CBA) assay as described in:
 
 Rosenberg AF, Killian JT, Green TJ, Akther J, Hossain E, Qiu S, Randall TD, Lund FE, King RG. _A high-throughput multiplex array for antigen-specific serology with automated analysis._ bioRxiv. 2023 April. doi: 10.1101/2023.03.29.534777.
 
