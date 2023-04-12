@@ -9,10 +9,10 @@ https://www.biorxiv.org/content/10.1101/2023.03.29.534777v1
 
 In addition to the files in this repo, three additional files from the Matlab File Exchange are required:
 
-* fca_fcsread.m (to import FCS files) available [here](https://www.mathworks.com/matlabcentral/fileexchange/9608-fca_readfcs)
+* fca_fcsread.m (to import FCS files) available [HERE](https://www.mathworks.com/matlabcentral/fileexchange/9608-fca_readfcs)
 
-* dscatter.m (to render density-coded scatter plots) available [here](https://www.mathworks.com/matlabcentral/fileexchange/8430-flow-cytometry-data-reader-and-visualization)
+* dscatter.m (to render density-coded scatter plots) available [HERE](https://www.mathworks.com/matlabcentral/fileexchange/8430-flow-cytometry-data-reader-and-visualization)
 
-* LP4.m (four-parameter logistic) available [here](https://www.mathworks.com/matlabcentral/fileexchange/38122-four-parameters-logistic-regression-there-and-back-again)
+* LP4.m (four-parameter logistic) available [HERE](https://www.mathworks.com/matlabcentral/fileexchange/38122-four-parameters-logistic-regression-there-and-back-again)
 
 Refer to the Users Guide PDF for installation and usage instructions.
