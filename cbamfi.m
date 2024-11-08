@@ -15,13 +15,14 @@ function F = cbamfi(F)
 % -------------------------------------------------------------------------
 %
 %    Authors: Alexander F. Rosenberg (afr@uab.edu) and Rodney G. King
-%        with John T. Killian, Todd J. Green, J. Akther, M. Emon Hossain,
-%        Shihong Qiu, Guang Yang, Troy D. Randall and Frances E. Lund
+%        with John T. Killian, Fen Zhou, Davide Botta, Todd J. Green,
+%        Jobaida Akther, M. Emon Hossain, Shihong Qiu, Guang Yang,
+%        Troy D. Randall and Frances E. Lund
 %
 %    University of Alabama at Birmingham
 %    Department of Microbiology
 %    April 11, 2023
-%    Copyright (C) 2023 UAB Research Foundation
+%    Copyright (C) 2024 UAB Research Foundation
 %    This software is offered with no guarantees of any kind.
 %
 %    see: "A high-throughput multiplex array for antigen-specific serology
@@ -88,7 +89,7 @@ function F = cbamfi(F)
         bot = 60;
         top = 10;
         left = 125;
-        right = 120;
+        right = 170;
         fw = left + (pw * niso) + (hsp * (niso - 1)) + right;
         fh = bot + (ph * nfeat) + (vsp * (nfeat -1)) + top;
 
@@ -137,7 +138,7 @@ function F = cbamfi(F)
         
             % print protein name
             subplot('position', posr);
-            text(.1, .5, F.out.name{i}, 'fontname', 'arial', 'fontsize', 14);
+            text(.1, .5, F.out.name{i}, 'fontname', 'arial', 'fontsize', 14, 'interpreter', 'none');
             set(gca, pref);
         
             % draw reactivity plots for each feature and isotype
