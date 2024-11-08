@@ -31,13 +31,14 @@ function [x, y, loc, pk, xgate] = gatechannel(ch, xrange, binsize, sm, minpeakh,
 % -------------------------------------------------------------------------
 %
 %    Authors: Alexander F. Rosenberg (afr@uab.edu) and Rodney G. King
-%        with John T. Killian, Todd J. Green, J. Akther, M. Emon Hossain,
-%        Shihong Qiu, Guang Yang, Troy D. Randall and Frances E. Lund
+%        with John T. Killian, Fen Zhou, Davide Botta, Todd J. Green,
+%        Jobaida Akther, M. Emon Hossain, Shihong Qiu, Guang Yang,
+%        Troy D. Randall and Frances E. Lund
 %
 %    University of Alabama at Birmingham
 %    Department of Microbiology
 %    April 11, 2023
-%    Copyright (C) 2023 UAB Research Foundation
+%    Copyright (C) 2024 UAB Research Foundation
 %    This software is offered with no guarantees of any kind.
 %
 %    see: "A high-throughput multiplex array for antigen-specific serology
