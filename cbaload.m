@@ -34,13 +34,14 @@ function F = cbaload(fname, isstd, aconf, bchan, fconf, prof, disp, ver)
 % -------------------------------------------------------------------------
 %
 %    Authors: Alexander F. Rosenberg (afr@uab.edu) and Rodney G. King
-%        with John T. Killian, Todd J. Green, J. Akther, M. Emon Hossain,
-%        Shihong Qiu, Guang Yang, Troy D. Randall and Frances E. Lund
+%        with John T. Killian, Fen Zhou, Davide Botta, Todd J. Green,
+%        Jobaida Akther, M. Emon Hossain, Shihong Qiu, Guang Yang,
+%        Troy D. Randall and Frances E. Lund
 %
 %    University of Alabama at Birmingham
 %    Department of Microbiology
 %    April 11, 2023
-%    Copyright (C) 2023 UAB Research Foundation
+%    Copyright (C) 2024 UAB Research Foundation
 %    This software is offered with no guarantees of any kind.
 %
 %    see: "A high-throughput multiplex array for antigen-specific serology
@@ -98,6 +99,15 @@ function F = cbaload(fname, isstd, aconf, bchan, fconf, prof, disp, ver)
 
     % extract ag orders for each bead size (and split bin if specified)
     fa = fields(A);
+    sz = table;
+    sz.field = string(fa(~cellfun('isempty', regexp(fa, 'bead_size_'))));
+    sz.size = str2num(char(regexprep(sz.field, 'bead_size_', '')));
+    sz.label = cell(1, length(sz.size))';
+    for i = 1:length(sz.size)
+        sz.label(i) = cellstr(A.(sz.field{i}));
+    end
+    sz.label = string(sz.label);
+    F.beadsize = sz;
     if isstd == 0, ty = 'peak'; else, ty = 'ctrl'; end
     fb = ['bead_' ty '_order_'];
     beadbin = fa(~cellfun('isempty', regexp(fa, fb)));
